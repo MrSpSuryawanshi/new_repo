@@ -1,4 +1,4 @@
 Ben=10
 A=5
 B=7
-C=str(Ben)
+C="Ben"
