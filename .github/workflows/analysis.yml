@@ -38,4 +38,10 @@ jobs:
         
     - name: Find SARIF file
       run: |
-        find $RUNNER_WORKSPACE -name "*.sarif" -print   
+        find $RUNNER_WORKSPACE -name "*.sarif" -print 
+
+    - name: Save SARIF results
+      uses: actions/upload-artifact@v2
+      with:
+        name: codeql-results
+        path: /home/runner/work/new_repo/results/python.sarif
