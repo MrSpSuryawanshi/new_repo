@@ -35,3 +35,7 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         category: "/language:${{matrix.language}}"
+        
+    - name: Find SARIF file
+      run: |
+        find $RUNNER_WORKSPACE -name "*.sarif" -print   
