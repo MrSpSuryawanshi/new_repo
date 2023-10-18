@@ -17,4 +17,4 @@ if __name__ == "__main__":
     log_sensitive_data(username, password)
 
 
-# The log_sensitive_data function is used to log sensitive information (in this case, a username and password) directly to the console.
+# The log_sensitive_data function is used to log sensitive information (in this case, a username and password) directly to the  console.
